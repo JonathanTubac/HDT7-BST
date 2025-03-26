@@ -6,7 +6,7 @@ class ProductoAdmin {
     private BST<Producto> bst = new BST<>();
 
     public void cargarCSV(String rutaArchivo) {
-        try (BufferedReader br = new BufferedReader(new FileReader("hdt7/src/main/java/uvg/edu/sku.csv"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("src/main/java/uvg/edu/sku.csv"))) {
             String linea;
             br.readLine(); // Saltar encabezado
             while ((linea = br.readLine()) != null) {
